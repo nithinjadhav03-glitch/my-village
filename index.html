@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jaithramthanda 🌾</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+    🌾 Jaithramthanda
+</div>
+        </div>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#help">Help</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    
+
+<div class="language-buttons">
+    <button onclick="setLanguage('en')">🇬🇧 English</button>
+    <button onclick="setLanguage('te')">🇮🇳 తెలుగు</button>
+    <button onclick="setLanguage('hi')">🇮🇳 हिन्दी</button>
+</div></header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="welcome" id="heroWelcome">WELCOME TO</p>
+
+        <h1 id="heroTitle">Jaithramthanda 🌾</h1>
+
+        <p id="heroDescription">
+            One simple place for village services,
+            information and help.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#services" class="primary-btn" id="exploreBtn">
+                Explore Services
+            </a>
+
+            <a href="#help" class="secondary-btn" id="helpBtn">
+                🆘 Need Help?
+            </a>
+
+        </div>
+            </div>
+
+        </section>
+
+
+        <!-- SEARCH -->
+
+        <section class="search-section">
+
+<h2 id="searchTitle">🔎 What are you looking for?</h2>
+            <input
+                type="text"
+                onkeyup="searchServices()"
+            >
+
+        </section>
+
+
+        <!-- SERVICES -->
+
+        <section id="services" class="services-section">
+
+            <p class="section-label">VILLAGE SERVICES</p>
+
+            <h2>How can we help you?</h2>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <div class="service-icon">🏛️</div>
+                    <h3>Government</h3>
+                    <p>Government services and useful links.</p>
+<a href="agriculture.html" class="primary-btn">
+    Open
+</a>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="service-icon">🌱</div>
+                    <h3>Agriculture</h3>
+                    <p>Farmer resources and agriculture information.</p>
+<a href="government.html" class="primary-btn">Open</a>                </div>
+
+
+                <div class="service-card">
+                    <div class="service-icon">🏥</div>
+                    <h3>Health</h3>
+                    <p>Healthcare information and emergency help.</p>
+<a href="health.html" class="primary-btn">
+    Open
+</a>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>Education</h3>
+                    <p>Schools, scholarships and learning resources.</p>
+<a href="education.html" class="primary-btn">
+    Open
+</a>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Jobs</h3>
+                    <p>Jobs, skills and employment resources.</p>
+<a href="jobs.html" class="primary-btn">
+    Open
+</a>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="service-icon">📢</div>
+                    <h3>Village Notices</h3>
+                    <p>Important village announcements.</p>
+
+                </div>
+
+
+                <div class="service-card">
+                    <div class="service-icon">📍</div>
+                    <h3>Village Directory</h3>
+                    <p>Find important places and local services.</p>
+<a href="directory.html" class="primary-btn">
+    Open
+</a>
+                </div>
+
+
+                <div class="service-card emergency-card">
+                    <div class="service-icon">🆘</div>
+                    <h3>Emergency Help</h3>
+                    <p>Important emergency contacts.</p>
+<a href="emergency.html" class="primary-btn">
+    Open
+</a>
+                    <button>Get Help</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HELP -->
+
+        <section id="help" class="help-section">
+
+            <div class="help-box">
+
+                <div>
+                    <p class="section-label">NEED ASSISTANCE?</p>
+
+                    <h2>Don't know where to start?</h2>
+
+                    <p>
+                        Tell us what you need and we'll help you
+                        find the right village service.
+                    </p>
+                </div>
+
+                <button onclick="showHelp()">
+                    🆘 I Need Help
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer id="contact">
+
+        <h2>🌾 Jaithramthanda</h2>
+
+        <p>
+            Making useful information easier to find.
+        </p>
+
+        <p class="copyright">
+            © 2026 Jaithramthanda
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
